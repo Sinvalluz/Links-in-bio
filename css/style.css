@@ -1,0 +1,95 @@
+@import url(./reset.css);
+
+:root {
+    --branco: #ffffff;
+    --direitos: #a0a0a0;
+}
+
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    background: rgb(143, 0, 0);
+    background: linear-gradient(180deg, rgba(143, 0, 0, 1) 0%, rgba(92, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+}
+
+.cabecalho__foto {
+    height: 250px;
+    width: 250px;
+    border: 3px solid var(--branco);
+    border-radius: 50%;
+}
+
+.cabecalho__nome {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--branco);
+    margin-top: 40px;
+}
+
+.cabecalho__descricao {
+    font-size: 1rem;
+    color: var(--branco);
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.container__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista__links {
+    padding: 20px 40px;
+    width: 450px;
+    border: 2px solid var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: var(--branco);
+    text-decoration: none;
+    transition: transform 0.15s linear;
+    position: relative;
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
+.lista__links img {
+    position: absolute;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.lista__links:hover {
+    transform: scale(1.1);
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.rodape__direitos {
+    color: var(--direitos);
+}
