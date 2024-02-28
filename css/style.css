@@ -11,6 +11,7 @@ body {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
     background-image: linear-gradient(to right bottom, #ff0000, #c20023, #820327, #420f1d, #000000);
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 700px;
+    width: 50vw;
 }
 
 .cabecalho__foto {
@@ -37,6 +38,7 @@ body {
     font-weight: 600;
     color: var(--branco);
     margin-top: 40px;
+    text-wrap: nowrap;
 }
 
 .cabecalho__descricao {
@@ -57,7 +59,7 @@ body {
 
 .lista__links {
     padding: 20px 40px;
-    width: 450px;
+    width: 40vw;
     border: 2px solid var(--branco);
     display: flex;
     align-items: center;
@@ -90,5 +92,18 @@ body {
 }
 
 .rodape__direitos {
+    width: 50vw;
+    text-align: center;
     color: var(--direitos);
+}
+
+@media (max-width: 480px) {
+
+    .lista__links {
+        width: 60vw;
+    }
+
+    .cabecalho {
+        width: 95vw;
+    }
 }
