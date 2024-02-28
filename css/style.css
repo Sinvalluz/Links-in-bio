@@ -10,8 +10,7 @@ body {
     box-sizing: border-box;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
-    background: rgb(143, 0, 0);
-    background: linear-gradient(180deg, rgba(143, 0, 0, 1) 0%, rgba(92, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    background-image: linear-gradient(to right bottom, #ff0000, #c20023, #820327, #420f1d, #000000);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,10 +26,10 @@ body {
 }
 
 .cabecalho__foto {
-    height: 250px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
     border: 3px solid var(--branco);
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .cabecalho__nome {
